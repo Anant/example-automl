@@ -1,0 +1,9 @@
+name: spark_example
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      num_trees: {type: int, default: 10}
+    command: "python train.py {num_trees}"
